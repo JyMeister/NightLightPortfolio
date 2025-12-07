@@ -1,0 +1,430 @@
+/*Custom Fonts*/
+#medievalsharp-regular {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#custom-body-text, p {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/*--end--*/
+
+/*CSS Variables*/
+:root {
+--primary-bg: #311e5f;
+--primary-bg-accent: rgb(66, 49, 104);
+--primary-text: #eadad6;
+--line-color: #221811;
+}
+/*--end--*/
+
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--primary-text);
+  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+
+/* Main Body Content */
+body {
+  background-color: var(--primary-bg);
+  background-image: url(photos/artsite/main_site_background.png);
+  background-position: 50% 40%; /*keeps the img centered when screen widens (F11) */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);  /* black overlay, 50% opacity */
+  z-index: -1;  /* stays behind content */
+}
+
+.prices > h1 {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  padding: 10px;
+}
+
+#prices {
+  border-radius: 500px;
+  text-align: center;
+  margin: 30px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  
+}
+
+.background > h1 {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  padding: 10px;
+}
+
+#background {
+  border-radius: 500px;
+  text-align: center;
+  margin: 30px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  padding-bottom: 1px;
+}
+
+.introduction > h1 {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  padding: 10px;
+}
+
+#introduction {
+  border-radius: 500px;
+  text-align: center;
+  margin: 30px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  padding-bottom: 1px;
+}
+
+.contact-me > h1 {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  padding: 10px;
+
+}
+
+.contact-me p {
+  padding-bottom: 15px;
+  font-size: 10px;
+}
+
+#contact-me {
+  border-radius: 500px;
+  text-align: center;
+  margin: 30px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+}
+
+#portfolio > h1 {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  padding: 10px;
+}
+
+#portfolio {
+  border-radius: 500px;
+  text-align: center;
+  margin: 30px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0) 70%);
+  padding-bottom: 30px;
+}
+
+.intro {
+  text-align: center;
+  padding: 8% 0 8% 0;
+  border-radius: 30%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 49%)
+}
+
+.intro-text {
+  font-size: 30px;
+}
+
+main {
+  text-align: center;
+  
+}
+
+
+/* fluid, readable text column */
+p {
+  font-size: clamp(18px, 2.2vw, 30px);
+  line-height: 1.6;
+  max-width: 65ch;      /* comfortable reading width */
+  margin: 0 auto 1.25rem; /* center the column, add bottom space */
+  padding: 0 16px;      /* tiny breathing room at very small widths */
+  color: white;
+  text-shadow:
+    -1px -1px 0 var(--line-color),
+     1px -1px 0 var(--line-color),
+    -1px  1px 0 var(--line-color),
+     1px  1px 0 var(--line-color);
+}
+
+
+/*--END--*/
+
+
+/* Navigation Area */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  padding: -5px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0) 100%);
+  margin: 0;
+  text-decoration: none;
+  
+}
+
+
+
+.nav li {
+  list-style-type: none;
+  padding: 15px 0;
+  font-size: 30px;
+}
+/*--END--*/
+
+
+/*Images*/
+
+#sona-gif {
+  width: 500px;
+  height: auto; 
+}
+
+
+.nav #nav-img-bee {
+  width: 150%;
+}
+
+#android-comm {
+  padding: 100px;
+  width: 30%;
+  border-radius: 30%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 70%)
+}
+
+#humanoid-bunny {
+  padding: 100px;
+  width: 30%;
+  border-radius: 30%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 70%);
+}
+
+#adrea {
+  padding: 100px;
+  width: 30%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 60%)
+}
+
+#shiney-acideon {
+  padding: 100px;
+  width: 30%;
+  border-radius: 20%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0) 70%)
+}
+
+#img-prices {
+  padding: 10px;
+  width: 90%;
+  border-radius: 20%;
+}
+
+.img-prices {
+  display: flex;
+  margin: 0;
+  
+}
+
+.slides {
+  width: 25%;
+}
+
+
+
+
+/* Links of all sorts */
+
+.nav-link {
+  text-decoration: none;
+}
+
+.contact-me a {
+  margin: 0 10px;
+  font-size: 5em;   /* size of icons */
+  color: white;      /* icon color */
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+/*Photo Gallery JavaScript*/
+
+
+  .slider {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;   /* hides the extra images */
+  }
+  .slides {
+    display: flex;      /* put images side by side */
+    transition: transform 0.5s ease;
+  }
+  .slides img {
+    width: 100%;        /* each image fills the slider width */
+  }
+
+
+
+
+
+/*Animation*/
+
+#nav-img-bee {
+  position: relative;
+  animation: buzz 1.5s ease-in-out infinite;
+}
+
+@keyframes buzz {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(10px, -15px); }
+  50%  { transform: translate(0, -25px); }
+  75%  { transform: translate(-10px, -15px); }
+  100% { transform: translate(0, 0); }
+}
+
+/*///////////// MEDIA QUERY //////////////*/
+
+/* Desktop: push content right by the nav width (270px) */
+@media (min-width: 1025px) {
+  .intro,
+  main { margin-left: 270px; }
+}
+
+/* -------- Tablet Screens (769px–1024px) -------- */
+@media (max-width: 1024px) and (min-width: 769px) {
+
+  .intro {
+    padding: 25% 0 25% 0;
+    border-radius: 30%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(0,0,0,0) 70%)
+  }
+
+  .intro-text h1 {
+    font-size: 40px;
+  }
+
+  .intro-text h3 {
+    font-size: 20px;
+  }
+
+  body {
+    margin-left: 10em;
+  }
+
+  .nav {
+    width: 200px;   /* narrower sidebar */
+  }
+
+  .nav li {
+    font-size: 22px; 
+    padding: 10px;
+  }
+
+  #contact-me p {
+  margin: 0 auto;              /* no side push */
+  display: flex;               /* lay icons in a row */
+  justify-content: center;     /* center the row */
+  gap: 20px;                   /* space between icons */
+}
+
+  #nav-img-bee {
+    width: 100px;   /* shrink bee but still show it */
+    height: auto;
+  }
+
+  p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+
+  #sona-gif,
+  #android-comm,
+  #humanoid-bunny,
+  #adrea,
+  #shiney-acideon, 
+  #prices {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+
+/* -------- Phone Screens (≤768px) -------- */
+@media (max-width: 768px) {
+
+  .intro, main {
+    padding-top: 80px;
+  }
+
+  
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(60, 13, 104, 0.85);
+    z-index: 1000;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav li {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  /* hide bee entirely on phones */
+  #nav-img-bee {
+    display: none;
+  }
+
+  /* center the paragraph column itself */
+  p {
+    max-width: 65ch;
+    margin: 0 auto 1.2rem;   /* <-- centers the block */
+    padding: 0 16px;          /* small side padding */
+    font-size: 18px;
+    text-align: center;       /* optional, if you want centered text */
+  }
+
+  #sona-gif,
+  #android-comm,
+  #humanoid-bunny,
+  #adrea,
+  #shiney-acideon, 
+  #prices {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+}
