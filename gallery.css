@@ -1,3 +1,4 @@
+
 /*Custom Fonts*/
 #medievalsharp-regular {
   font-family: "MedievalSharp", cursive;
@@ -250,4 +251,256 @@ body {
 }
 
 
+
+
+/*Custom Fonts*/
+#medievalsharp-regular {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#fredericka-the-great-regular {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#custom-body-text, p {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/*--end--*/
+
+/*CSS Variables*/
+:root {
+--primary-bg: #311e5f;
+--primary-bg-accent: rgb(66, 49, 104);
+--primary-text: #eadad6;
+--line-color: #221811;
+}
+/*--end--*/
+
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--primary-text);
+  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+
+/* Main Body Content */
+body {
+  background-color: var(--primary-bg);
+  background-image: url(photos/artsite/sona_cats_banner_update.png);
+  background-position: 50% 40%; /*keeps the img centered when screen widens (F11) */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);  /* black overlay, 50% opacity */
+  z-index: -1;  /* stays behind content */
+}
+
+#sona-banner {
+  position: fixed;
+}
+
+
+
+.intro {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+}
+
+p {
+  font-size: 25px;
+  margin-left: 400px;
+  margin-right: 400px;
+  
+  color: white;
+  text-shadow: 
+    -1px -1px 0 var(--line-color),  
+     1px -1px 0 var(--line-color),
+    -1px  1px 0 var(--line-color),
+     1px  1px 0 var(--line-color);
+}
+
+
+/*--END--*/
+
+
+/* Navigation Area */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  padding: -5px 0;
+  background-color: rgba(60, 13, 104, 0.55);
+  margin: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  padding: 15px 0;
+  font-size: 30px;
+}
+/*--END--*/
+
+/*Images*/
+
+.nav #nav-img-bee {
+  width: 150%;
+}
+
+
+
+/* Links of all sorts */
+
+.nav-link {
+  text-decoration: none;
+}
+
+.contact-me a {
+  margin: 0 10px;
+  font-size: 5em;   /* size of icons */
+  color: white;      /* icon color */
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.portfolio a {
+  text-decoration: none;
+}
+
+
+/*Animation*/
+
+#nav-img-bee {
+  position: relative;
+  animation: buzz 1.5s ease-in-out infinite;
+}
+
+@keyframes buzz {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(10px, -15px); }
+  50%  { transform: translate(0, -25px); }
+  75%  { transform: translate(-10px, -15px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* @Media tags */
+
+/* -------- Tablet Screens (769px–1024px) -------- */
+@media (max-width: 1024px) and (min-width: 769px) {
+
+body {
+  margin-left: 10em;
+}
+
+  .nav {
+    width: 200px;   /* narrower sidebar */
+  }
+
+  .nav li {
+    font-size: 22px; 
+    padding: 10px;
+  }
+
+  #nav-img-bee {
+    width: 100px;   /* shrink bee but still show it */
+    height: auto;
+  }
+
+  p {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+  }
+
+  #sona-gif,
+  #android-comm,
+  #humanoid-bunny,
+  #adrea,
+  #shiney-acideon {
+    width: 60%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+
+/* -------- Phone Screens (≤768px) -------- */
+@media (max-width: 768px) {
+
+  body {
+    margin-top: 4em;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(60, 13, 104, 0.85);
+    z-index: 1000;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav li {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  /* hide bee entirely on phones */
+  #nav-img-bee {
+    display: none;
+  }
+
+  p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  #sona-gif,
+  #android-comm,
+  #humanoid-bunny,
+  #adrea,
+  #shiney-acideon {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+}
 
